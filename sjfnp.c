@@ -21,7 +21,7 @@ void mem(int a[], int n)
 void main(){
     int i=0,n=5,totbt=0,min,index,j;
     int at[] = {2,5,1,0,4};
-    int bt[] = {6,2,8,3,4};
+    int b[] = {6,2,8,3,4};
     for(i=0;i<n;i++) totbt+=bt[i];
     int ct[50];
     for(i=0;i<totbt;i++){
