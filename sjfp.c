@@ -33,11 +33,10 @@ void main()
     {
         scanf("%d", &bt[i]);
         dbt[i] = bt[i];
+        totbt += bt[i];
     }
 
     int curRunning = 0;
-    for (i = 0; i < n; i++)
-        totbt += bt[i];
     for (i = 0; i <= totbt; i++)
     {
         curMin = 999;
@@ -72,16 +71,13 @@ void main()
     {
         tat[i] = ct[i] - at[i];
         tottat += tat[i];
-    }
-
-    for (i = 0; i < n; i++)
-    {
         wt[i] = tat[i] - bt[i];
         totwt += wt[i];
     }
     avg_tat = (float)tottat / n;
     avg_wt = (float)totwt / n;
     printArray(ct, n);
+    printArray(res,totbt);
     printf("process|at|bt|wt|tat\n");
     for (int i = 0; i < n; i++)
     {
